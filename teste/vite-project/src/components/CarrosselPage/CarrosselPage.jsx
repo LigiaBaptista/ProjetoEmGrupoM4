@@ -1,9 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Avatar from '../assets/img/avatar.jpg';
-import TudoEm from '../assets/img/TudoEm.jfif';
-import AsBranquelas from '../assets/img/AsBranquelas.jpg'
+import Avatar from '../../assets/img/avatar.jpg';
+import TudoEm from '../../assets/img/TudoEm.jfif';
+import AsBranquelas from '../../assets/img/AsBranquelas.jpg'
 
-function CarouselPage() {
+function CarrosselPage() {
   return (
     <Carousel>
       <Carousel.Item>
@@ -43,4 +43,4 @@ function CarouselPage() {
   );
 }
 
-export default CarouselPage;
+export default CarrosselPage;

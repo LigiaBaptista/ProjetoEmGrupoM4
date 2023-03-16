@@ -1,6 +1,6 @@
-import Home from '../assets/img/home.svg';
-import Search from '../assets/img/search.svg';
-import Library from '../assets/img/library.svg';
+import Home from '../../assets/img/home.svg';
+import Search from '../../assets/img/search.svg';
+import Library from '../../assets/img/library.svg';
 import styles from './Footer.module.css';
 
 
