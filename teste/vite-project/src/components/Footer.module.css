@@ -1,17 +1,18 @@
 footer{
-    background-color: #272626;
+    background-color: #1A1A1A;
 }
 
 .footerItems{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .footerItem{
     display: flex;
-    flex-direction: column !important;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+

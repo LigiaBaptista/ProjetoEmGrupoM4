@@ -2,6 +2,8 @@ import { useState } from "react";
 import Profile from "../../assets/img/profile.svg";
 import Modal from "../ModalLogin";
 import React  from "react";
+import styles from './LoginAccount.module.css'
+
 function LoginAccount(){
     const [show, setShow] = useState(false);
 
@@ -10,7 +12,7 @@ function LoginAccount(){
 
     return(
     <> 
-    <button onClick={() => handleShow()}>
+    <button onClick={() => handleShow()} className={styles.Botao}>
     <a href="#login" style={{textDecoration:"none", fontFamily:"Inter"}} ><img
     alt=""
     src={Profile}

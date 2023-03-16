@@ -5,7 +5,7 @@ import AsBranquelas from '../assets/img/AsBranquelas.jpg'
 
 function CarouselPage() {
   return (
-    <Carousel>
+    <Carousel style={{display:"flex", alignItems:"center"}}>
       <Carousel.Item>
         <img style={{width:600, height: 300, borderRadius:10}}
           className="d-block"

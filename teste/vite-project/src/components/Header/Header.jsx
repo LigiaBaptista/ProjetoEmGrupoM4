@@ -10,14 +10,14 @@ function Header() {
   return (
     <>
     <header className={styles.a}>
-      <Navbar style={{background:"#272626"}} >
+      <Navbar style={{background:"#1A1A1A"}} >
         <Container>
           <Navbar.Brand href="#home">
             <img
               alt=""
               src={Logo}
               width="240"
-              height="70"
+              height="80"
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
