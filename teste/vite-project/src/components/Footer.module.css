@@ -1,0 +1,17 @@
+footer{
+    background-color: #272626;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerItem{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+}
