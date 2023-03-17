@@ -1,4 +1,3 @@
-import styles from '../Header/Header.module.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/img/logo.png';
@@ -7,8 +6,8 @@ import LoginAccount from './LoginAccount/LoginAccount';
 function Header() {
 	return (
 		<>
-			<header className={styles.a}>
-				<Navbar style={{ background: '#272626' }}>
+			<header className='bg-dark'>
+				<Navbar>
 					<Container>
 						<Navbar.Brand href='#home'>
 							<img alt='' src={Logo} width='240' height='70' className='d-inline-block align-top' />{' '}
