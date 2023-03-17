@@ -4,7 +4,7 @@ import Formulario from '../../components/Formulario/Formulario';
 
 function Cadastro(){
     return(
-        <Formulario/>
+        <Formulario />
     )
 }
 export default Cadastro;

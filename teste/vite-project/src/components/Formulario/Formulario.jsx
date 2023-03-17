@@ -90,7 +90,7 @@ function Formulario() {
                         <Form.Label>CEP</Form.Label>
                         <Form.Control type="CEP" placeholder="" required onChange={(event) => setEndereco({...endereco, cep: event.target.value})}/>
                         <Form.Control.Feedback type="invalid">
-                            Por favor, digite seu CEP
+                            Por favor, digite o seu CEP
                         </Form.Control.Feedback>
                     </Form.Group>
                 </Row>
