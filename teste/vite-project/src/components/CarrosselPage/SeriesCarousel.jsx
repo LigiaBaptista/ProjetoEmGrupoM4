@@ -9,8 +9,6 @@ import American from '../../assets/img/americanhorror.jfif';
 import Greys from '../../assets/img/greys.jpeg';
 import Breaking from '../../assets/img/breakingbad.jfif';
 
-
-
 const items = [
   
     <div key={1}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
@@ -89,6 +87,4 @@ const items = [
       </>
     );
   };
-  
-
-  export default SeriesCarousel;
+export default SeriesCarousel;

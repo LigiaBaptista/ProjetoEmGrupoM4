@@ -25,7 +25,7 @@ function CarrosselPage() {
         />
 
         <Carousel.Caption>
-        <h3>Tudo em Todo Lugar ao Mesmo Tempo</h3>
+          <h3>Tudo em Todo Lugar ao Mesmo Tempo</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
