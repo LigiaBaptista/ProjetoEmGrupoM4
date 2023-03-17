@@ -1,40 +1,33 @@
-import Home from '../../assets/img/home.svg';
-import Search from '../../assets/img/search.svg';
-import Library from '../../assets/img/library.svg';
-import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import * as Icon from 'react-bootstrap-icons';
 
+import './Footer.module.css';
 
 function Footer() {
-
   return (
-    <>
-    <footer>
-    <div className={styles.footerItems}>
-        <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter"}}><img
-              alt=""
-              src={Home}
-              width="30"
-              height="30"
-              className={styles.footerItem}
-            />Inicio</a>
-            </div>
-        <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter" }}><img
-              alt=""
-              src={Search}
-              width="30"
-              height="30"
-              className={styles.footerItem}
-            />Pesquisar</a></div>
-        <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter"}}><img
-              alt=""
-              src={Library}
-              width="30"
-              height="30"
-              className={styles.footerItem}
-            />Biblioteca</a></div>
-    </div>
-      </footer>
-    </>
+    <footer className="w-100 position-fixed bottom-0 ">
+      <Nav className="justify-content-evenly w-100 grad" activeKey="/">
+        <Nav.Item>
+          <Link to="/" className="d-flex flex-column text-decoration-none">
+            <Icon.HouseDoorFill size={30} className="m-auto" />
+            Inicio
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/search" className="d-flex flex-column  text-decoration-none">
+            <Icon.Search size={30} className="m-auto" />
+            Pesquisar
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/biblioteca" className="d-flex flex-column  text-decoration-none">
+            <Icon.Book size={30} className="m-auto" />
+            Biblioteca
+          </Link>
+        </Nav.Item>
+      </Nav>
+    </footer>
   );
 }
 
