@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Avatar from '../../assets/img/avatar.jpg';
-import TudoEm from '../../assets/img/TudoEm.jfif';
+import TudoEm from '../../assets/img/tudoem.jpg';
 import AsBranquelas from '../../assets/img/asbranquelas2.jpg'
 
 function CarrosselPage() {
   return (
-    <Carousel className='w-50 '>
+    <Carousel className='mt-5'>
       <Carousel.Item>
-        <img style={{ borderRadius:10}}
+        <img width="100%" height={500} style={{borderRadius:10}}
           className="d-block"
           src={AsBranquelas}
           alt="First slide"
@@ -17,8 +17,8 @@ function CarrosselPage() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-        style={{width:600, height: 300, borderRadius:10 }}
+        <img width="100%" height={500}
+        style={{borderRadius:10 }}
           className="d-block"
           src={TudoEm}
           alt="Second slide"
@@ -29,8 +29,8 @@ function CarrosselPage() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-        style={{width:600, height: 300, borderRadius:10}}
+        <img width="100%" height={500}
+        style={{borderRadius:10}}
           className="d-block"
           src={Avatar}
           alt="Third slide"

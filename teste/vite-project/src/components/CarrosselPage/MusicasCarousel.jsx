@@ -11,37 +11,37 @@ import TheW from '../../assets/img/theweekend.jpg';
 
 const items = [
   
-    <div key={1}><Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+    <div key={1}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
           <Card.Img style={{height:'10rem'}} variant="top" src={Pericles}/>
            <Card.Body>
              <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Péricles</Card.Title>
           </Card.Body>
         </Card></div>,
-    <div key={2}> <Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+    <div key={2}> <Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
           <Card.Img style={{height:'10rem'}} variant="top" src={Queen}/>
          <Card.Body>
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Queen</Card.Title>
           </Card.Body>
         </Card></div>,
-    <div key={3}><Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+    <div key={3}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
          <Card.Img style={{height:'10rem'}} variant="top" src={Rihanna}/>
          <Card.Body>
            <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Rihanna</Card.Title>
          </Card.Body>
       </Card></div>,
-    <div key={4}><Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+    <div key={4}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
     <Card.Img style={{height:'10rem'}} variant="top" src={Baco}/>
          <Card.Body>
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Baco Exu do Blues</Card.Title>
           </Card.Body>
         </Card></div>,
-    <div key={5}><Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+    <div key={5}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
         <Card.Img style={{height:'10rem'}} variant="top" src={Gaga}/>
           <Card.Body>
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Lady Gaga</Card.Title>
          </Card.Body>
        </Card></div>,
-        <div key={6}><Card style={{ width: '18rem', backgroundColor:"#101010"}}>
+        <div key={6}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
         <Card.Img style={{height:'10rem'}} variant="top" src={TheW}/>
           <Card.Body>
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>The Weeknd</Card.Title>
@@ -79,9 +79,12 @@ const items = [
   };
   const MusicasCarousel = () => {
     return (
+      <>
+      <h4 className="text-white my-4" style={{fontFamily:"Inter", fontSize:"30px"}}>Músicas</h4>
       <Carousel {...settings}>
         {items}
       </Carousel>
+      </>
     );
   };
   

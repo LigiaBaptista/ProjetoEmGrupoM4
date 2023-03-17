@@ -8,14 +8,14 @@ function Footer() {
 
   return (
     <>
-    <footer>
+    <footer className={styles.footer}>
     <div className={styles.footerItems}>
         <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter"}}><img
               alt=""
               src={Home}
               width="30"
               height="30"
-              className={styles.footerItem}
+              className="d-flex justify-content-center align-items-center flex-direction-column my-1"
             />Inicio</a>
             </div>
         <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter" }}><img
@@ -23,14 +23,14 @@ function Footer() {
               src={Search}
               width="30"
               height="30"
-              className={styles.footerItem}
+              className="d-flex justify-content-center align-items-center flex-direction-column my-1"
             />Pesquisar</a></div>
         <div><a href='#home' style={{textDecoration:"none", fontFamily:"Inter"}}><img
               alt=""
               src={Library}
               width="30"
               height="30"
-              className={styles.footerItem}
+              className="d-flex justify-content-center align-items-center flex-direction-column my-1"
             />Biblioteca</a></div>
     </div>
       </footer>

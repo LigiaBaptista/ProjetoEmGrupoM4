@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from './Home.module.css'
+import { Container } from 'react-bootstrap';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import Carousel from '../../components/CarrosselPage/CarrosselPage';
 import Filmes from '../../components/CarrosselPage/FilmesCarousel';
 import Series from '../../components/CarrosselPage/SeriesCarousel';
@@ -8,17 +10,16 @@ import Musicas from '../../components/CarrosselPage/MusicasCarousel';
 
 export default function Home(){
   return(
-    <container className="d-flex flex-column justify-content-center">
+    <>
+    <Header/>
+    < Container className="d-flex flex-column justify-content-center">
+     
       <Carousel />
         <Filmes/>
-      {/* <br/>
-      <h4>Séries</h4>
-      <br/>
-      <Series/>
-      <br/>
-      <h4>Músicas</h4>
-      <br/>
-      <Musicas/> */}
-    </container>
+        <Series/>
+        <Musicas/>
+    </Container>
+    <Footer/>
+    </>
   )
 }

@@ -22,12 +22,14 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         
         <Routes>
+          <Header />
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/biblioteca" element={<Biblioteca />} />
           <Route path="/playlist" element={<Playlist />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="*" element={<h1>404: Not Found</h1>} />
+          <Footer />
         </Routes>
         
       </Suspense>
