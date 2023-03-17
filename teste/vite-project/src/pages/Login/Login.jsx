@@ -5,9 +5,9 @@ import logo from '../../assets/img/logo.png';
 
 function Login() {
   return (
-    <Container className="d-flex flex-column vh-100 justify-content-center align-items-center">
+    <>
       <img src={logo} width="250px" alt="" />
-      <Form className="w-25 bg-secundary p-3 rounded m-4 shadow text-light ">
+      <Form className=" bg-dark p-3 rounded m-4 shadow text-light form">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -20,7 +20,7 @@ function Login() {
           Logar
         </Button>
       </Form>
-    </Container>
+    </>
   );
 }
 
