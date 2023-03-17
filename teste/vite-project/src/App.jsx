@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Login = lazy(() => import('./pages/Login/Login'));
+const Biblioteca = lazy(() => import('./pages/Biblioteca/Biblioteca'));
+const Playlist = lazy(() => import('./pages/Playlist/Playlist'))
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/biblioteca" element={<Biblioteca />} />
+          <Route path="/playlist" element={<Playlist />} />
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
         
