@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Avatar from '../../assets/img/avatar.jpg';
 import TudoEm from '../../assets/img/TudoEm.jfif';
-import AsBranquelas from '../../assets/img/AsBranquelas.jpg'
+import AsBranquelas from '../../assets/img/asbranquelas2.jpg'
 
 function CarrosselPage() {
   return (
-    <Carousel style={{display:"flex", alignItems:"center"}}>
+    <Carousel className='w-50 '>
       <Carousel.Item>
-        <img style={{width:600, height: 300, borderRadius:10}}
+        <img style={{ borderRadius:10}}
           className="d-block"
           src={AsBranquelas}
           alt="First slide"

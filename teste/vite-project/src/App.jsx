@@ -4,11 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 import Header from "./components/Header/Header";
-import CarrosselPage from "./components/CarrosselPage/CarrosselPage";
+// import CarrosselPage from "./components/CarrosselPage/CarrosselPage";
 import Footer from "./components/Footer/Footer";
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Login = lazy(() => import('./pages/Login/Login'));
+
+
+
 
 function App() {
   return (
