@@ -1,27 +1,23 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../../assets/img/logo.png';
 import LoginAccount from './LoginAccount/LoginAccount';
 
 function Header() {
-	return (
-		<>
-			<header >
-				<Navbar style={{ background: '#1a1a1a' }}>
-					<Container>
-						<Navbar.Brand href='#home'>
-							<img alt='' src={Logo} width='240' height='70' className='d-inline-block align-top' />{' '}
-						</Navbar.Brand>
-						<Navbar.Collapse className='justify-content-end align-center'>
-							<Navbar.Text>
-								<LoginAccount />
-							</Navbar.Text>
-						</Navbar.Collapse>
-					</Container>
-				</Navbar>
-			</header>
-		</>
-	);
+  return (
+    <Navbar style={{ background: '#1a1a1a' }} expand="md">
+      <Container className="text-white">
+        <Navbar.Brand href="/">
+          <img src={Logo} width={200} className="auto" alt="" srcSet="" />
+        </Navbar.Brand>
+        <Navbar.Toggle className="bg-success" aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end text-white">
+          <Nav className="align-items-start">
+            <LoginAccount />
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Header;

@@ -1,26 +1,30 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import { Container } from 'react-bootstrap';
+import { Button, Form, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
 
 function Login() {
   return (
-    <>
-      <img src={logo} width="250px" alt="" />
-      <Form className=" bg-dark p-3 rounded m-4 shadow text-light form">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+    <Container
+      className="d-flex  flex-column justify-content-center align-items-center btn-flat rounded p-4 my-5 shadow text-white"
+      style={{ maxWidth: 400, background: '#101010' }}>
+      <img src={logo} width={350} alt="logo" />
+      <Form className="w-100">
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="Insira seu email" autoFocus />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Senha</Form.Label>
+          <Form.Control type="password" placeholder="Insira sua senha" />
         </Form.Group>
-        <Button variant="success" className="float-end" type="submit">
-          Logar
+        <Button variant="success" type="submit" className="w-100">
+          Entrar
         </Button>
       </Form>
-    </>
+      <p className="mt-3 mb-0">
+        Não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
+      </p>
+    </Container>
   );
 }
 

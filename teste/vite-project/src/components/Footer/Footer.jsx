@@ -6,8 +6,8 @@ import './Footer.module.css';
 
 function Footer() {
   return (
-    <footer className="w-100 position-fixed bottom-0 bg-dark py-2">
-      <Nav className="justify-content-evenly w-100 grad" activeKey="/">
+    <footer className="w-100 position-fixed bottom-0 py-2 mt-2">
+      <Nav className="justify-content-evenly w-100" activeKey="/">
         <Nav.Item>
           <Link to="/" className="d-flex flex-column text-decoration-none">
             <Icon.HouseDoorFill size={30} className="m-auto" />
