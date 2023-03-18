@@ -2,12 +2,12 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from 'react-bootstrap/Card';
-import Fleabag from '../../assets/img/flebag.jpg';
-import Naruto from '../../assets/img/naruto.jpg';
-import NewGirl from '../../assets/img/newgirl.jpg';
-import American from '../../assets/img/americanhorror.jfif';
-import Greys from '../../assets/img/greys.jpeg';
-import Breaking from '../../assets/img/breakingbad.jfif';
+import Fleabag from '../../assets/img/Series/flebag.jpg';
+import Naruto from '../../assets/img/Series/naruto.jpg';
+import NewGirl from '../../assets/img/Series/newgirl.jpg';
+import American from '../../assets/img/Series/americanhorror.jfif';
+import Greys from '../../assets/img/Series/greys.jpeg';
+import Breaking from '../../assets/img/Series/breakingbad.jfif';
 
 const items = [
   <div key={1}>

@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Avatar from '../../assets/img/avatar.jpg';
-import TudoEm from '../../assets/img/tudoem.jpg';
-import AsBranquelas from '../../assets/img/asbranquelas2.jpg'
+import Avatar from '../../assets/img/Filmes/avatar.jpg';
+import TudoEm from '../../assets/img//Filmes/tudoem.jpg';
+import AsBranquelas from '../../assets/img/Filmes/asbranquelas2.jpg'
 
 function CarrosselPage() {
   return (

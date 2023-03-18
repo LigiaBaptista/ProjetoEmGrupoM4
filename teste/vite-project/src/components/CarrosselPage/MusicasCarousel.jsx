@@ -2,12 +2,12 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from 'react-bootstrap/Card';
-import Pericles from '../../assets/img/pericles.jfif';
-import Queen from '../../assets/img/queen.jpg';
-import Rihanna from '../../assets/img/rihanna.webp';
-import Baco from '../../assets/img/baco.webp';
-import Gaga from '../../assets/img/ladygaga.jpg';
-import TheW from '../../assets/img/theweekend.jpg';
+import Pericles from '../../assets/img/Musicas/pericles.jfif';
+import Queen from '../../assets/img/Musicas/queen.jpg';
+import Rihanna from '../../assets/img/Musicas/rihanna.webp';
+import Baco from '../../assets/img/Musicas/baco.webp';
+import Gaga from '../../assets/img/Musicas/ladygaga.jpg';
+import TheW from '../../assets/img/Musicas/theweekend.jpg';
 
 const items = [
   

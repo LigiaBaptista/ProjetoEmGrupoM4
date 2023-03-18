@@ -2,12 +2,12 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from 'react-bootstrap/Card';
-import Avatar from '../../assets/img/avatar.jpg';
-import AsBranquelas from '../../assets/img/asbranquelas.jpg';
-import TudoEm from '../../assets/img/TudoEm.jfif'
-import Titanic from '../../assets/img/titanic.jfif'
-import Clube from '../../assets/img/clubedaluta.jfif'
-import Barbie from '../../assets/img/barbie.jpg'
+import Avatar from '../../assets/img/Filmes/avatar.jpg';
+import AsBranquelas from '../../assets/img/Filmes/asbranquelas.jpg';
+import TudoEm from '../../assets/img/Filmes/TudoEm.jfif'
+import Titanic from '../../assets/img/Filmes/titanic.jfif'
+import Clube from '../../assets/img/Filmes/clubedaluta.jfif'
+import Barbie from '../../assets/img/Filmes/barbie.jpg'
 
 const items = [
     
