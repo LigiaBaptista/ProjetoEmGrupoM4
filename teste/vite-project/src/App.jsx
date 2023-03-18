@@ -7,6 +7,8 @@ const Biblioteca = lazy(() => import('./pages/Biblioteca/Biblioteca'));
 const Playlist = lazy(() => import('./pages/Playlist/Playlist'));
 const Cadastro = lazy(() => import('./pages/Cadastro/Cadastro'));
 
+
+
 function App() {
   return (
     <Router>
