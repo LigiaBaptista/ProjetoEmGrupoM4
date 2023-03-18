@@ -15,7 +15,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={Fleabag} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
           Fleabag
         </Card.Title>
       </Card.Body>
@@ -27,7 +27,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={Naruto} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center',  fontSize: 25, color: 'white' }}>
           Naruto
         </Card.Title>
       </Card.Body>
@@ -38,7 +38,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={NewGirl} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center',  fontSize: 25, color: 'white' }}>
           New Girl
         </Card.Title>
       </Card.Body>
@@ -49,7 +49,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={American} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center',  fontSize: 25, color: 'white' }}>
           American
         </Card.Title>
       </Card.Body>
@@ -60,7 +60,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={Greys} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center',  fontSize: 25, color: 'white' }}>
           Grey's Anatomy
         </Card.Title>
       </Card.Body>
@@ -71,7 +71,7 @@ const items = [
       <Card.Img style={{ height: '10rem' }} variant="top" src={Breaking} />
       <Card.Body>
         <Card.Title
-          style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: 25, color: 'white' }}>
+          style={{ textAlign: 'center',  fontSize: 25, color: 'white' }}>
           Breaking Bad
         </Card.Title>
       </Card.Body>

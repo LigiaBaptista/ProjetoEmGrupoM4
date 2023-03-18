@@ -5,7 +5,7 @@ import AsBranquelas from '../../assets/img/Filmes/asbranquelas2.jpg'
 
 function CarrosselPage() {
   return (
-    <Carousel className='mt-5'>
+    <Carousel className='mt-5 color-white'>
       <Carousel.Item>
         <img width="100%" height={500} style={{borderRadius:10}}
           className="d-block"

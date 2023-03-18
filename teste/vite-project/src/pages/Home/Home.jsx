@@ -12,7 +12,7 @@ export default function Home(){
   return(
     <>
     <Header/>
-  <Container className="d-flex flex-column justify-content-center">
+  <Container className="d-flex flex-column justify-content-center pb-5">
       <Carousel />
         <Filmes/>
         <Series/>

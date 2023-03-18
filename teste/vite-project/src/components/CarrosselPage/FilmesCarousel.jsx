@@ -14,37 +14,37 @@ const items = [
     <div key={1}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
           <Card.Img  style={{height:'10rem'}} variant="top" src={Avatar}/>
            <Card.Body>
-             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Avatar 2</Card.Title>
+             <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>Avatar 2</Card.Title>
           </Card.Body>
         </Card></div>,
     <div key={2}> <Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
           <Card.Img style={{height:'10rem'}} variant="top" src={AsBranquelas}/>
          <Card.Body>
-            <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>As Branquelas</Card.Title>
+            <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>As Branquelas</Card.Title>
           </Card.Body>
         </Card></div>,
     <div key={3}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
          <Card.Img style={{height:'10rem'}} variant="top" src={TudoEm}/>
          <Card.Body>
-           <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Tudo em Todo ... </Card.Title>
+           <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>Tudo em Todo ... </Card.Title>
          </Card.Body>
       </Card></div>,
     <div key={4}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
     <Card.Img style={{height:'10rem'}} variant="top" src={Titanic}/>
          <Card.Body>
-            <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Titanic</Card.Title>
+            <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>Titanic</Card.Title>
           </Card.Body>
         </Card></div>,
     <div key={5}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
         <Card.Img style={{height:'10rem'}} variant="top" src={Clube}/>
           <Card.Body>
-            <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Clube da Luta</Card.Title>
+            <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>Clube da Luta</Card.Title>
          </Card.Body>
        </Card></div>,
         <div key={6}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
         <Card.Img style={{height:'10rem'}} variant="top" src={Barbie}/>
           <Card.Body>
-            <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Barbie Fairytopia</Card.Title>
+            <Card.Title style={{textAlign:'center', fontSize:25, color:"white"}}>Barbie Fairytopia</Card.Title>
          </Card.Body>
        </Card></div>,
   ];
