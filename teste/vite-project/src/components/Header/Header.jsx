@@ -6,7 +6,7 @@ import LoginAccount from './LoginAccount/LoginAccount';
 function Header() {
 	return (
 		<>
-			<header className={styles.a}>
+			<header >
 				<Navbar style={{ background: '#1a1a1a' }}>
 					<Container>
 						<Navbar.Brand href='#home'>
