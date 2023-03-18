@@ -2,7 +2,7 @@ import {Badge, ListGroup, Container, Card }from 'react-bootstrap';
 
 function DefaultExample() {
   return (
-    <Container className="text">
+    <Container className="pb-5">
 
      <Card className="bg-transparent text-white" style={{ border: 'none', margin: 0 }}>
       <Card.Body>
@@ -170,7 +170,7 @@ function DefaultExample() {
 
       <ListGroup.Item
         as="li"
-        className="d-flex justify-content-between align-items-start text-white bg-dark"
+        className="d-flex justify-content-between align-items-start text-white bg-dark pb-5"
       >
         <div className="ms-2 me-auto">
           <div className="fw-bold">Lancinho</div>

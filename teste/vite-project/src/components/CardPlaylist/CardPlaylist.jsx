@@ -8,7 +8,7 @@ import Foto4 from '../../assets/img/foto4.png'
 
 function CardWithImageAndText() {
   return (
-    <Container>
+    <Container className="py-5">
       <Card className="bg-transparent text-white" style={{ border: 'none', margin: 0 }}>
       <Card.Body>
         <Card.Title style={{ fontSize: '40px' }}>Sua biblioteca</Card.Title>
@@ -63,7 +63,7 @@ function CardWithImageAndText() {
     </Row>
   </Card>
 
-  <Card className="bg-transparent text-white my-4 mx-5">
+  <Card className="bg-transparent text-white my-4 mx-5 mb-5">
     <Row>
       <Col md={2}>
         <Card.Img src={Foto4}/>
