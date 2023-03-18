@@ -6,7 +6,7 @@ const Login = lazy(() => import('./pages/Login/Login'));
 const Biblioteca = lazy(() => import('./pages/Biblioteca/Biblioteca'));
 const Playlist = lazy(() => import('./pages/Playlist/Playlist'));
 const Cadastro = lazy(() => import('./pages/Cadastro/Cadastro'));
-
+const PlayerPage = lazy(() => import('./pages/Player/PlayerPage'));
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Route path="/biblioteca" element={<Biblioteca />} />
           <Route path="/playlist" element={<Playlist />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/PlayerPage" element={<PlayerPage />} />
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
       </Suspense>
