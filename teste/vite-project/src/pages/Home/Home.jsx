@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Carousel from '../../components/CarrosselPage/CarrosselPage';
@@ -14,7 +13,6 @@ export default function Home(){
     <>
     <Header/>
     < Container className="d-flex flex-column justify-content-center">
-     
       <Carousel />
         <Filmes/>
         <Series/>
