@@ -41,7 +41,7 @@ const items = [
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>Lady Gaga</Card.Title>
          </Card.Body>
        </Card></div>,
-        <div key={6}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5 my-5">
+        <div key={6}><Card style={{ width: '18rem', backgroundColor:"#101010"}} className="ms-5">
         <Card.Img style={{height:'10rem'}} variant="top" src={TheW}/>
           <Card.Body>
             <Card.Title style={{textAlign:'center', fontFamily:'Inter', fontSize:25, color:"white"}}>The Weeknd</Card.Title>
@@ -81,7 +81,7 @@ const items = [
     return (
       <>
       <h4 className="text-white my-4" style={{fontFamily:"Inter", fontSize:"30px"}}>Músicas</h4>
-      <Carousel {...settings}>
+      <Carousel {...settings} className="mb-5">
         {items}
       </Carousel>
       </>

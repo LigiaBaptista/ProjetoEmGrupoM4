@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Profile from '../../../assets/img/profile.svg';
-import Modal from '../../ModalLogin/ModalLogin'
 import React from 'react';
 
 import {Button} from 'react-bootstrap'
@@ -13,7 +12,7 @@ function LoginAccount() {
 	return (
     <>
       <Button variant="dark" onClick={handleShow}>
-        <a href="#login" className="text-decoration-none text-white">
+        <a href="/biblioteca" className="text-decoration-none text-white">
           <img
             alt=""
             src={Profile}
@@ -21,10 +20,9 @@ function LoginAccount() {
             height="30"
             className="d-inline-block align-center"
           />{' '}
-          Login
+          Luis
         </a>
       </Button>
-      <Modal show={show} handleShow={handleShow} handleClose={handleClose} />
     </>
   );
 }
