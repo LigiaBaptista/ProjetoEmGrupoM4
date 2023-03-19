@@ -1,4 +1,5 @@
 import {Badge, ListGroup, Container, Card }from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function DefaultExample() {
   return (
@@ -14,10 +15,12 @@ function DefaultExample() {
     <ListGroup as="ol" numbered>
       <ListGroup.Item
         as="li"
-        className="d-flex justify-content-between align-items-start text-success bg-dark"
+        className="d-flex justify-content-between align-items-start text-white bg-dark"
         >
         <div className="ms-2 me-auto">
+        <Link to="/PlayerPage">
           <div className="fw-bold">Save Your Tears</div>
+          </Link>
           The Weeknd
         </div>
         <Badge bg="none" pill>

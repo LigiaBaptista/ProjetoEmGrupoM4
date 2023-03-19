@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Capa from '../../assets/img/foto1.png';
+import Capa from '../../assets/img/Biblioteca/foto5.png';
 import Shuffle from '../../assets/img/Player/shuffle.svg';
 import Previous from '../../assets/img/Player/previous.svg';
 import Play from '../../assets/img/Player/play-circle-fill.svg';
