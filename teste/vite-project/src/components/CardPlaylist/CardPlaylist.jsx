@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Row, Col, Container } from 'react-bootstrap';
-import Foto1 from '../../assets/img/foto1.png';
-import Foto2 from '../../assets/img/foto2.png';
-import Foto3 from '../../assets/img/foto3.png';
-import Foto4 from '../../assets/img/foto4.png';
+import Foto1 from '../../assets/img/Biblioteca/foto1.png';
+import Foto2 from '../../assets/img/Biblioteca/foto2.png';
+import Foto3 from '../../assets/img/Biblioteca/foto3.png';
+import Foto4 from '../../assets/img/Biblioteca/foto4.png';
+import { Link } from 'react-router-dom';
 
 function CardWithImageAndText() {
   return (
@@ -21,7 +22,9 @@ function CardWithImageAndText() {
           </Col>
           <Col className="p-0" md={8}>
             <Card.Body>
+              <Link to="/playlist">
               <Card.Title>Músicas Duvidosas</Card.Title>
+              </Link> 
               <Card.Text>900 músicas</Card.Text>
             </Card.Body>
           </Col>
