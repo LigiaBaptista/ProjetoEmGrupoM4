@@ -12,4 +12,6 @@ const ProgressBar = ({ value, max }) => {
     );
 };
 
+
+
 export default ProgressBar;
