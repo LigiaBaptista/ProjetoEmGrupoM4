@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/logo.jpeg';
 import LoginAccount from './LoginAccount/LoginAccount';
 
 function Header() {
