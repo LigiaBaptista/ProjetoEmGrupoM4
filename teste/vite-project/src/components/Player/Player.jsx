@@ -10,7 +10,7 @@ import Repeat from '../../assets/img/Player/repeat.svg';
 function Player() {
     const now = 60;
     return(
-        <Container className="d-flex justify-content-center align-items-center flex-column">
+        <Container className="d-flex justify-content-center align-items-center flex-column mt-5">
             <div><img src={Capa} alt="capa" style={{width:"400px"}}/></div>
             <div> <h4 className="mt-3 mb-1">Save Your Tears</h4></div>
             <div><h5>The Weeknd</h5></div>
