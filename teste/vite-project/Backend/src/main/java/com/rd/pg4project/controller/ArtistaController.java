@@ -13,7 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/artistas")
+@RequestMapping("/api/artistas")
 @RequiredArgsConstructor
 public class ArtistaController {
     @NonNull

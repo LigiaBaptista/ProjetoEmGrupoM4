@@ -24,7 +24,7 @@ public class Playlist {
             joinColumns = @JoinColumn(name = "playlist_id"),
             inverseJoinColumns = @JoinColumn(name = "midia_id")
     )
-    private List<Midia> midias;
+    private List<Midia> midias; //TODO: Verificar implementação
 
     private Integer midiaAtual;
     private Boolean misturarMidias;
