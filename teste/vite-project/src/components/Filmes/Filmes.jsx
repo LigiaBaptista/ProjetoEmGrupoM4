@@ -3,7 +3,7 @@ function Filmes(props) {
  const {pokemon} = props
 
   return (
-    <div>
+    <div key={pokemon.id}>
       <h1>{pokemon.titulo}</h1>
     </div>
   )
