@@ -1,6 +1,6 @@
 import { Button, Form, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.jpeg';
 
 function Login() {
   return (
