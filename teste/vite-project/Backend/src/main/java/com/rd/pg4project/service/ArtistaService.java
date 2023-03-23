@@ -2,6 +2,7 @@ package com.rd.pg4project.service;
 
 import com.rd.pg4project.Dto.ArtistaDTO;
 import com.rd.pg4project.model.Artista;
+import com.rd.pg4project.model.Ator;
 import com.rd.pg4project.repository.ArtistaRepository;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -41,5 +42,13 @@ public class ArtistaService {
 
     public void excluir(Long id) {
         artistaRepository.deleteById(id);
+    }
+
+    public ArtistaDTO toDTO(Artista artista, Ator ator) {
+
+
+        ArtistaDTO artistaDTO = new ArtistaDTO
+                (artista.getNome(), artista.getDataNascimento(), artista.getPremiacoes(), artista.getGenero(),ator.getFormacao());
+        return artistaDTO;
     }
 }

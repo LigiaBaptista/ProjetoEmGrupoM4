@@ -6,11 +6,13 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController 
+@CrossOrigin("*")
+@RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/usuarios")
 public class UsuarioController {
@@ -41,5 +43,14 @@ public class UsuarioController {
     @DeleteMapping("/{id}")
     public void excluir(@PathVariable Long id) {
         usuarioService.excluir(id);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<Usuario> login(@RequestBody Usuario usuario) {
+        Usuario usuarioExistente = usuarioService.login(usuario);
+        if (usuarioExistente != null) {
+            return ResponseEntity.ok(usuarioExistente);
+        }
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
     }
 }

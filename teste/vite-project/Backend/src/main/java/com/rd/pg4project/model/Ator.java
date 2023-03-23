@@ -11,8 +11,6 @@ import jakarta.persistence.*;
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Ator extends Artista {
-
-
     private String formacao;
 
 }

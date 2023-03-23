@@ -3,6 +3,7 @@ package com.rd.pg4project.service;
 import com.rd.pg4project.Dto.UsuarioDTO;
 import com.rd.pg4project.model.Usuario;
 import com.rd.pg4project.repository.UsuarioRepository;
+import jakarta.websocket.Session;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,5 +48,16 @@ public class UsuarioService {
 
     public void excluir(Long id) {
         usuarioRepository.deleteById(id);
+    }
+
+    public Usuario login(Usuario usuario) {
+        Usuario usuarioExistente = usuarioRepository.findByEmail(usuario.getEmail());
+        if (usuarioExistente != null) {
+            if (bCryptPasswordEncoder.matches(usuario.getSenha(), usuarioExistente.getSenha())) {
+
+
+            }
+        }
+        return null;
     }
 }
