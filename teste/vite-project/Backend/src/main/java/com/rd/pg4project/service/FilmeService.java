@@ -35,6 +35,7 @@ public class FilmeService {
         filmeExistente.setTipo(filme.getTipo());
         filmeExistente.setElenco(filme.getElenco());
         filmeExistente.setDiretor(filme.getDiretor());
+        filmeExistente.setPoster_url(filme.getPoster_url());
         return filmeRepository.save(filmeExistente);
     }
 
