@@ -1,6 +1,8 @@
 <h1 align="center">Projeto em Grupo Módulo 4 – "Streaming Digital"</h1>
 
-<h3> ✨ Esse é um projeto desenvolvido durante o bootcamp da Resilia Educação. ✨</h3>
+ <img src="https://user-images.githubusercontent.com/120734078/227373828-5458b584-aeab-4756-8dfc-fefaaab70125.png">
+ 
+ <h3> ✨ Esse é um projeto desenvolvido durante o bootcamp da Resilia Educação. ✨</h3>
 
 <h2>📝 Sobre o projeto:</h2>
 <p>Uma empresa de mídia deseja implementar um serviço denominado Valdisnei, que disponibiliza seu catálogo de mídias, cujo o qual contém músicas, filmes, séries e demais mídias.</p>
@@ -44,7 +46,9 @@ Gênero (masc/fem/ind), e seus getters e setters.
 - Playlist - mídias, ordem de execução, mídia atual, com seus
 getters e setters, e métodos para próxima mídia, mídia anterior, misturar mídias<p>
 
-<h2>🖥️ Como executar o projeto?</h2>
+<h2>🖥️ Modelagem</h2>
+<p>Foi mapeado por meio do Spring JPA criando essa modelagem a seguir:
+<img src="https://user-images.githubusercontent.com/120734078/227374193-a514f3f4-ee98-4810-856f-40cc69a24479.png">
 
 <p>
 </p>
@@ -58,7 +62,7 @@ getters e setters, e métodos para próxima mídia, mídia anterior, misturar m�
 
 <div style='display: flex; justify-content: center;'>
    <img width="80px" src="https://user-images.githubusercontent.com/120734078/227089945-0bdc573c-5862-4efa-9140-2282437f1009.png">
-  <img width="80px" src="https://user-images.githubusercontent.com/120734078/227089978-e57f067b-aec3-4d96-b64d-3b0700736de8.png">
+   <img width="80px" src="https://user-images.githubusercontent.com/120734078/227089978-e57f067b-aec3-4d96-b64d-3b0700736de8.png">
    <img width="80px" src="https://user-images.githubusercontent.com/120734078/227089953-c2eb9f63-f0f1-4a0d-afe5-1303f66146e8.png">
    <img width="80px" src="https://user-images.githubusercontent.com/120734078/227089987-418331f8-b9f3-4aa2-b237-07528f335b84.png">
    <img width="160px" src="https://user-images.githubusercontent.com/120734078/227089984-48efc270-697e-40c6-bb8b-c2dd5bedcd48.png">
