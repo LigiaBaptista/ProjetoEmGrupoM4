@@ -22,6 +22,8 @@ const App = () => {
             }
         }, 1000);
 
+
+
         return () => {
             clearTimeout(timer);
         };

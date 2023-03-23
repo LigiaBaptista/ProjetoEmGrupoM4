@@ -23,9 +23,9 @@ function CardWithImageAndText() {
           <Col className="p-0" md={8}>
             <Card.Body>
               <Link to="/playlist">
-              <Card.Title>Músicas Duvidosas</Card.Title>
+              <Card.Title>Músicas Aleatórias</Card.Title>
               </Link> 
-              <Card.Text>900 músicas</Card.Text>
+              <Card.Text>13 músicas</Card.Text>
             </Card.Body>
           </Col>
         </Row>

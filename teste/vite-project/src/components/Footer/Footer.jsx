@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import * as Icon from 'react-bootstrap-icons';
-
 import './Footer.module.css';
+
 
 function Footer() {
   return (
-    <footer className="w-100 position-fixed bottom-0 py-2 mt-2">
+
+    <footer className="w-100 position-fixed bottom-0 py-2 mt-2 ">
       <Nav className="justify-content-evenly w-100" activeKey="/">
         <Nav.Item>
           <Link to="/" className="d-flex flex-column text-decoration-none">

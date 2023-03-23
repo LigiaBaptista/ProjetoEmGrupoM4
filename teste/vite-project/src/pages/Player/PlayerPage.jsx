@@ -4,13 +4,15 @@ import Player from "../../components/Player/Player";
 import { Container } from "react-bootstrap";
 import App from '../../components/ProgressBar/App.jsx'
 
+
+
 export default function PlayerPage(){
     return(
         <>
         <Header/>
-        <Container>
+        <Container style={{marginBottom:"100px"}}>
         <Player/>
-        <App/>
+        <App />
         </Container>
         <Footer/>
         </>
