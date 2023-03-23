@@ -1,7 +1,6 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../../assets/img/logo.jpeg';
 import LoginAccount from './LoginAccount/LoginAccount';
-
 function Header() {
   return (
     <Navbar style={{ background: '#1a1a1a' }} expand="md">
@@ -14,6 +13,7 @@ function Header() {
           <Nav className="align-items-start">
             <LoginAccount />
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
