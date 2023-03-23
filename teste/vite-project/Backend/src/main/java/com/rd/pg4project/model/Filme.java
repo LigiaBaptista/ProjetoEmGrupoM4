@@ -15,7 +15,6 @@ public class Filme extends Midia {
 
     private Integer duracao;
     private String tipo;
-
     @ElementCollection
     @CollectionTable(name = "filme_elenco", joinColumns = @JoinColumn(name = "filme_id"))
     @Column(name = "ator")

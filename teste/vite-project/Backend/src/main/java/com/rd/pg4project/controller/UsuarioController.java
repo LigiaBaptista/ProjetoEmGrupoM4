@@ -1,5 +1,7 @@
 package com.rd.pg4project.controller;
 
+import com.rd.pg4project.Dto.LoginDTO;
+import com.rd.pg4project.Dto.PerfilDTO;
 import com.rd.pg4project.model.Usuario;
 import com.rd.pg4project.service.UsuarioService;
 import lombok.NonNull;
@@ -46,8 +48,8 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Usuario> login(@RequestBody Usuario usuario) {
-        Usuario usuarioExistente = usuarioService.login(usuario);
+    public ResponseEntity<PerfilDTO> login(@RequestBody LoginDTO loginDTO) {
+        var usuarioExistente = usuarioService.login(loginDTO);
         if (usuarioExistente != null) {
             return ResponseEntity.ok(usuarioExistente);
         }

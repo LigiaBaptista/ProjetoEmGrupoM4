@@ -44,11 +44,4 @@ public class ArtistaService {
         artistaRepository.deleteById(id);
     }
 
-    public ArtistaDTO toDTO(Artista artista, Ator ator) {
-
-
-        ArtistaDTO artistaDTO = new ArtistaDTO
-                (artista.getNome(), artista.getDataNascimento(), artista.getPremiacoes(), artista.getGenero(),ator.getFormacao());
-        return artistaDTO;
-    }
 }
