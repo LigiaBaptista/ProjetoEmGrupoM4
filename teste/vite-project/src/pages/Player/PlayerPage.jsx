@@ -10,9 +10,9 @@ export default function PlayerPage(){
     return(
         <>
         <Header/>
-        <Container>
+        <Container style={{marginBottom:"100px"}}>
         <Player/>
-        <App/>
+        <App />
         </Container>
         <Footer/>
         </>
