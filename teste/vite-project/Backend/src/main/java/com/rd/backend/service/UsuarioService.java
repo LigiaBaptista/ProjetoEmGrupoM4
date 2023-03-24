@@ -35,23 +35,32 @@ public class UsuarioService {
         }
     }
 
-    public Usuario buscarPorId(Long id) {
-        return usuarioRepository.findById(id).orElseThrow(() -> new ExceptionApi("O ID " + id + " não corresponde a nenhum usuário", HttpStatus.NOT_FOUND));
+    public PerfilDTO buscarPorId(Long id) {
+        try {
+            if (usuarioRepository.findById(id).isPresent()) {
+                Usuario usuario = usuarioRepository.findById(id).get();
+                return new PerfilDTO(usuario.getNome(), usuario.getEmail());
+            } else {
+                throw new ExceptionApi("O ID " + id + " não corresponde a nenhum usuário", HttpStatus.NOT_FOUND);
+            }
+        } catch (ExceptionApi e) {
+            throw new ExceptionApi(e.getMessage(),e.getErrorType());
+        }
     }
 
     public Usuario criar(Usuario usuario) {
            try {
-                if (usuario.getNome().isEmpty() || usuario.getNome() == null) {
+                if (usuario.getNome() == null || usuario.getNome().isEmpty()) {
                     throw new ExceptionApi("Nome do usuário não pode ser vazio", HttpStatus.BAD_REQUEST);
                 }
-                if (usuario.getEmail().isEmpty() || usuario.getEmail() == null) {
+                if (usuario.getEmail() == null || usuario.getEmail().isEmpty()) {
                     throw new ExceptionApi("Email do usuário não pode ser vazio", HttpStatus.BAD_REQUEST);
                 }
-                if (usuario.getSenha().isEmpty() || usuario.getSenha() == null) {
+                if (usuario.getSenha() == null || usuario.getSenha().isEmpty()) {
                     throw new ExceptionApi("Senha do usuário não pode ser vazia", HttpStatus.BAD_REQUEST);
                 }
                 if (usuarioRepository.findByEmail(usuario.getEmail()) != null) {
-                    throw new ExceptionApi("Email já cadastrado", HttpStatus.CONFLICT);
+                    throw new ExceptionApi("Email já cadastrado", HttpStatus.BAD_REQUEST);
                 }
                 String senhaCriptografada = bCryptPasswordEncoder.encode(usuario.getSenha());
                 usuario.setSenha(senhaCriptografada);
@@ -63,13 +72,24 @@ public class UsuarioService {
     }
 
     public Usuario atualizar(Long id, Usuario usuario) {
-        Usuario usuarioExistente = buscarPorId(id);
-        usuarioExistente.setNome(usuario.getNome());
-        usuarioExistente.setEmail(usuario.getEmail());
-        String senhaCriptografada = bCryptPasswordEncoder.encode(usuario.getSenha());
-        usuarioExistente.setSenha(senhaCriptografada);
-        return usuarioRepository.save(usuarioExistente);
+        try {
+            if (usuarioRepository.findById(id).isPresent()) {
+                Usuario usuarioExistente = usuarioRepository.findById(id).get();
+                usuarioExistente.setNome(usuario.getNome());
+                usuarioExistente.setEmail(usuario.getEmail());
+                String senhaCriptografada = bCryptPasswordEncoder.encode(usuario.getSenha());
+                usuarioExistente.setSenha(senhaCriptografada);
+                return usuarioRepository.save(usuarioExistente);
+            } else {
+                throw new ExceptionApi("O ID " + id + " não corresponde a nenhum usuário", HttpStatus.NOT_FOUND);
+            }
+        } catch (ExceptionApi e) {
+            throw new ExceptionApi(e.getMessage(),e.getErrorType());
+        }
     }
+
+
+
 
     public void excluir(Long id) {
         try {

@@ -40,23 +40,47 @@ public class UsuarioController {
 
 
     @GetMapping("/{id}")
-    public Usuario buscarPorId(@PathVariable Long id) {
-        return usuarioService.buscarPorId(id);
+    public ResponseEntity<?> buscarPorId(@PathVariable Long id) {
+        try {
+              var perfil = usuarioService.buscarPorId(id);
+                return ResponseEntity.ok(perfil);
+
+        } catch (ExceptionApi e) {
+            ErroDTO erroDTO = new ErroDTO(e.getErrorType(), e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erroDTO);
+        }
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Usuario criar(@RequestBody Usuario usuario) {
-        return usuarioService.criar(usuario);
+    public ResponseEntity<?> criar(@RequestBody Usuario usuario) {
+        try{
+            var perfil = usuarioService.criar(usuario);
+            return ResponseEntity.ok(perfil);
+        } catch (ExceptionApi e) {
+            ErroDTO erroDTO = new ErroDTO(e.getErrorType(), e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erroDTO);
+        }
     }
     @PutMapping("/{id}")
-    public Usuario atualizar(@PathVariable Long id, @RequestBody Usuario usuario) {
-        return usuarioService.atualizar(id, usuario);
+    public PerfilDTO atualizar(@PathVariable Long id, @RequestBody Usuario usuario) {
+        try{
+            var perfil = usuarioService.atualizar(id, usuario);
+            return new PerfilDTO(perfil.getNome(), perfil.getEmail());
+        } catch (ExceptionApi e) {
+            return null;
+        }
     }
 
     @DeleteMapping("/{id}")
-    public void excluir(@PathVariable Long id) {
-        usuarioService.excluir(id);
+    public ResponseEntity<?> excluir(@PathVariable Long id) {
+        try {
+            usuarioService.excluir(id);
+            return ResponseEntity.status(HttpStatus.OK).body("Usuário excluído com sucesso!");
+        } catch (ExceptionApi e) {
+            ErroDTO erroDTO = new ErroDTO(e.getErrorType(), e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erroDTO);
+        }
     }
 
     @PostMapping("/login")
