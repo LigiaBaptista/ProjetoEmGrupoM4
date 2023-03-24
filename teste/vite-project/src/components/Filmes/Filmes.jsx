@@ -1,11 +1,25 @@
+import { useEffect, useState } from 'react';
+import api from '../../services/api';
 
-function Filmes(props) {
- const {pokemon} = props
+const GetFilmes = () => {
+  const [filmes, setFilmes] = useState([]);
+
+  useEffect(() => {
+    api.get('/filmes').then((response) => {
+      setFilmes(response.data);
+    });
+  }, []);
 
   return (
-    <div key={pokemon.id}>
-      <h1>{pokemon.titulo}</h1>
+    <div>
+      {filmes.map((filme) => (
+        <div key={filme.id}>
+          <img src={filme.poster_url} alt={filme.nome} />
+          <h1>{filme.nome}</h1>
+        </div>
+      ))}
     </div>
-  )
-}
-export default Filmes
+  );
+};
+
+export default GetFilmes;

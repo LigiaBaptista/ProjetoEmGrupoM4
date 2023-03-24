@@ -1,26 +1,33 @@
-import Filme from '../Filmes/Filme'
-import { useEffect, useState } from 'react'
-import api from '../../services/api'
+import { useEffect, useState } from 'react';
+import api from '../../services/api';
 
-function Filmes() {
-  const [pokemons, setPokemons] = useState([])
-
+const Filmes = () => {
+  const [filmes, setFilmes] = useState([]);
   useEffect(() => {
-    api.get('/filmes').then(response => {
-      setPokemons(response.data)
-    })
-  }, [])
-
+    api.get('/filmes').then((response) => {
+      console.log(response.data);
+      setFilmes(response.data);
+    });
+  }, []);
   return (
-    <div className="App">
-      {pokemons && pokemons.map(pokemon => (
-        <>
-          <Filme pokemon={pokemon} style={{color:"white"}}/>
-          
-        </>
+    <div className='container'>
+      {filmes.map((filme) => (
+        <div key={filme.id}>
+          <img src={filme.poster_url} alt={filme.nome} />
+          <h1>
+            [{filme.ano}] {filme.titulo}
+          </h1>
+          <p className="text-white">Generos: {filme.genero}</p>
+          <p className="text-white">Elenco: {filme.elenco.join(', ')}</p>
+          <p className="text-white">Diretor: {filme.diretor}</p>
+          <p className="text-white">Duracao: {filme.duracao}min</p>
+
+            
+         
+        </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Filmes
+export default Filmes;

@@ -2,13 +2,10 @@ package com.rd.pg4project.service;
 
 import com.rd.pg4project.Dto.LoginDTO;
 import com.rd.pg4project.Dto.PerfilDTO;
-import com.rd.pg4project.Dto.UsuarioDTO;
 import com.rd.pg4project.model.Usuario;
 import com.rd.pg4project.repository.UsuarioRepository;
-import jakarta.websocket.Session;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

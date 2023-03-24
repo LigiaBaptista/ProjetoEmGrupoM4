@@ -8,7 +8,8 @@ function Login() {
       className="d-flex  flex-column justify-content-center align-items-center btn-flat rounded p-4 my-5 shadow text-white"
       style={{ maxWidth: 400, background: '#101010' }}>
       <img src={logo} width={350} alt="logo" />
-      <Form className="w-100">
+      
+      <Form className="w-100" Method="POST" action="/login">
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="Insira seu email" autoFocus />
