@@ -1,4 +1,4 @@
-<h1 align="center">Projeto em Grupo Módulo 4 – "Streaming Digital"</h1>
+<h1 align="center">Projeto em Grupo Módulo 4 – "Streaming Digital" (Em Desenvolvimento)</h1>
 
  <img src="https://user-images.githubusercontent.com/120734078/227373828-5458b584-aeab-4756-8dfc-fefaaab70125.png">
  
